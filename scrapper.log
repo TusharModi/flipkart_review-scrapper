@@ -1,0 +1,259 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 13:52:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 13:52:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 13:54:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 13, in homepage
+    return render_template("index.html")
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 13:54:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /review [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 72, in index
+    return render_template('index.html')
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 13:54:57] "[35m[1mGET /review HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /review [GET]
+Traceback (most recent call last):
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/config/.local/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/config/workspace/app.py", line 72, in index
+    return render_template('index.html')
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/config/.local/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/config/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/config/.local/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 13:55:05] "[35m[1mGET /review HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 14:49:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 14:49:29] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 14:49:29] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:root:name 'bigbox' is not defined
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 14:49:42] "POST /review HTTP/1.1" 200 -
+INFO:root:name 'bigbox' is not defined
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 14:49:54] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:11:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:11:05] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:11:05] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:root:name 'bigbox' is not defined
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:11:11] "POST /review HTTP/1.1" 200 -
+INFO:root:name 'bigbox' is not defined
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:14:02] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'iphone7', 'Name': 'Hemanta Sa', 'Rating': '5', 'CommentHead': 'Worth every penny', 'Comment': 'Thank u Flipkart for your fast delivery. It is awesome and very very nice.I like this very much.'}, {'Product': 'iphone7', 'Name': 'Gautam Choudhary', 'Rating': '5', 'CommentHead': 'Worth every penny', 'Comment': 'Awesome Smartphone for iPhone lover..I got it during The Big Billion Day Sale..Camera Quality AwesomePerformance is SuperbGood Display Beautiful Looking Battery performs is minus point as per trend it is not as much sufficient but not too bad..Really love it ?????Thank you Flipkart..????'}, {'Product': 'iphone7', 'Name': 'Ezzazuddin Huseni', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': "From last 5 years my younger brother was using iphone 4s  and i bought iphone 7 for his birthday gift. When i gave gift packet to him he was thinking that my bro bought watch/pen/or something else but he didn't expected iphone 7 . When he opened, i found tear in his eye and he hug me.this all possible only because of flipkart sale coz we r from middle class family and can't afford this mobile in it's actual price so flipkart makes us happy.Thanks you flipkart 😍"}, {'Product': 'iphone7', 'Name': 'Anish Singh', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': "My first iPhone ❤️Got 3 days before expected delivery date. Thank you Flipkart.Phone is looking so classy, handy & beautiful.It's a black beauty. Sound & display quality is awesome .For best music experience use your Apple headphones, which you will get with box.Loved it ❤️"}, {'Product': 'iphone7', 'Name': 'suresh b', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'excellent phone camera is very nice and the stereo speakers are fantastic it gives you cinematic experience with the cool retaina display .Blindly go for it value for money .'}, {'Product': 'iphone7', 'Name': 'Flipkart Customer', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'I have been using the earlier versions of iPhones therefore no great change with the UI on personal front. I purchased a rose gold phone but I realised that I should have gone with the black colour. The camera of iPhones are superior in all sense. The phone is sleek and light weight but slippery. Delivery was as promised. Another thing to note is, henceforth the phone are “Made in India” products.'}, {'Product': 'iphone7', 'Name': 'Mayank Chaube', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'IMPORTANT NOTICEIf you buy some apple device online there specifically i phones so 99% of it you get original phones.. but whenever you findp out best deals for yourself do ensure its imei numberSecondly, the probably of getting duplicate accessories increases with the increasing discount.. so must verify themREST the phone is superb especially when you shift first time from Android or WindowsFingerprint and Display attracted me the most😃😃'}, {'Product': 'iphone7', 'Name': 'Shariq Ahmad Beigh', 'Rating': '5', 'CommentHead': 'Awesome', 'Comment': 'Well, what can I say... iPhone is awesome as expected. Added the prompt delivery from Flipkart with great packaging. Truly satisfied...The lightening connector Air pods are amazing and a huge upgrade in voice quality when we compared it with an old iPhone earphone.Only con: Not a con really but I would have liked wireless Air Pods with this phone, but after seeing the performance of my lightening connector Air pods I have no regrets at all.'}, {'Product': 'iphone7', 'Name': 'Jay Nimavat ', 'Rating': '5', 'CommentHead': 'Best in the market!', 'Comment': 'awesome product... speedy delivery before time by flipkart ... very happy thank u flipkart'}, {'Product': 'iphone7', 'Name': 'chandan kumar panda', 'Rating': '5', 'CommentHead': 'Great product', 'Comment': "amazing phone  my first i phone 7 it is really nice and good performance valueable money 😉 , it's run with IOS 13 that is osm new features and amazing features 10/10 🥰😍"}, {'Product': 'iphone7', 'Name': 'chandan kumar panda', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': "amazing phone  my first i phone 7 it is really nice and good performance valueable money 😉 , it's run with IOS 13 that is osm new features and amazing features 10/10 🥰😍"}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:21:51] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:21:51] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:21:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'iphone7', 'Name': 'Hemanta Sa', 'Rating': '5', 'CommentHead': 'Worth every penny', 'Comment': 'Thank u Flipkart for your fast delivery. It is awesome and very very nice.I like this very much.'}, {'Product': 'iphone7', 'Name': 'Gautam Choudhary', 'Rating': '5', 'CommentHead': 'Worth every penny', 'Comment': 'Awesome Smartphone for iPhone lover..I got it during The Big Billion Day Sale..Camera Quality AwesomePerformance is SuperbGood Display Beautiful Looking Battery performs is minus point as per trend it is not as much sufficient but not too bad..Really love it ?????Thank you Flipkart..????'}, {'Product': 'iphone7', 'Name': 'Ezzazuddin Huseni', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': "From last 5 years my younger brother was using iphone 4s  and i bought iphone 7 for his birthday gift. When i gave gift packet to him he was thinking that my bro bought watch/pen/or something else but he didn't expected iphone 7 . When he opened, i found tear in his eye and he hug me.this all possible only because of flipkart sale coz we r from middle class family and can't afford this mobile in it's actual price so flipkart makes us happy.Thanks you flipkart 😍"}, {'Product': 'iphone7', 'Name': 'Anish Singh', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': "My first iPhone ❤️Got 3 days before expected delivery date. Thank you Flipkart.Phone is looking so classy, handy & beautiful.It's a black beauty. Sound & display quality is awesome .For best music experience use your Apple headphones, which you will get with box.Loved it ❤️"}, {'Product': 'iphone7', 'Name': 'suresh b', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'excellent phone camera is very nice and the stereo speakers are fantastic it gives you cinematic experience with the cool retaina display .Blindly go for it value for money .'}, {'Product': 'iphone7', 'Name': 'Flipkart Customer', 'Rating': '4', 'CommentHead': 'Pretty good', 'Comment': 'I have been using the earlier versions of iPhones therefore no great change with the UI on personal front. I purchased a rose gold phone but I realised that I should have gone with the black colour. The camera of iPhones are superior in all sense. The phone is sleek and light weight but slippery. Delivery was as promised. Another thing to note is, henceforth the phone are “Made in India” products.'}, {'Product': 'iphone7', 'Name': 'Mayank Chaube', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'IMPORTANT NOTICEIf you buy some apple device online there specifically i phones so 99% of it you get original phones.. but whenever you findp out best deals for yourself do ensure its imei numberSecondly, the probably of getting duplicate accessories increases with the increasing discount.. so must verify themREST the phone is superb especially when you shift first time from Android or WindowsFingerprint and Display attracted me the most😃😃'}, {'Product': 'iphone7', 'Name': 'Shariq Ahmad Beigh', 'Rating': '5', 'CommentHead': 'Awesome', 'Comment': 'Well, what can I say... iPhone is awesome as expected. Added the prompt delivery from Flipkart with great packaging. Truly satisfied...The lightening connector Air pods are amazing and a huge upgrade in voice quality when we compared it with an old iPhone earphone.Only con: Not a con really but I would have liked wireless Air Pods with this phone, but after seeing the performance of my lightening connector Air pods I have no regrets at all.'}, {'Product': 'iphone7', 'Name': 'Jay Nimavat ', 'Rating': '5', 'CommentHead': 'Best in the market!', 'Comment': 'awesome product... speedy delivery before time by flipkart ... very happy thank u flipkart'}, {'Product': 'iphone7', 'Name': 'chandan kumar panda', 'Rating': '5', 'CommentHead': 'Great product', 'Comment': "amazing phone  my first i phone 7 it is really nice and good performance valueable money 😉 , it's run with IOS 13 that is osm new features and amazing features 10/10 🥰😍"}, {'Product': 'iphone7', 'Name': 'chandan kumar panda', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': "amazing phone  my first i phone 7 it is really nice and good performance valueable money 😉 , it's run with IOS 13 that is osm new features and amazing features 10/10 🥰😍"}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:21:58] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:21:58] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:21:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'iphone12', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Terrific', 'Comment': 'Wow superb camera phone Very smooth speed and no lag , iphone is the king always Its a beautiful product'}, {'Product': 'iphone12', 'Name': 'Anurag Lad', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'The brand is very trustworthy and i got genuine pice at a very low cost.I ordered the green one and trust me the colour was amazing.All the colours but specifically green and purple are nice for look.Thanks to flipkart❤️'}, {'Product': 'iphone12', 'Name': 'Vishal Gandhi', 'Rating': '5', 'CommentHead': 'Terrific purchase', 'Comment': 'Awesome phone … value for money.. Happy with battery life.. Awesome camera features… look at the images snapped using the phone… easy to use.. Just feared about getting scratch at back glass… but using cover helped it…'}, {'Product': 'iphone12', 'Name': 'Athul Shabu', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': 'Top class performance  and battery backup too. Charges quickly if u are using a 20w charger. Night mode is good , HDR mode works flawlessly. VFM phone.'}, {'Product': 'iphone12', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Awesome', 'Comment': 'Excellent product worth for every penny, writing this review after using 7 days, earlier was using iPhone 6Plus now on iPhone 12 😍, faster then anything this else.Excellent Picture quality.Just loved it.!!'}, {'Product': 'iphone12', 'Name': 'Ishu Kumar', 'Rating': '5', 'CommentHead': 'Mind-blowing purchase', 'Comment': 'Guys ,this is just Beast at Every Aspect of Configurations, Full Pack with What You want, Like Best Camera , Best Display, Best Battery for whole Day Use, And Everyone know About Processing Speed👌..'}, {'Product': 'iphone12', 'Name': 'Ayaz Ahmad', 'Rating': '5', 'CommentHead': 'Brilliant', 'Comment': "Almost 1month of purshase and i am loving it . Great for photography and videography and trust me the stability of video is awesome . High end performence in Gaming , the only problem is that it heats up a little while playing Bgmi but if u play in a AC room then there's no issue .The boxy look of iphone 12 is very good and it gives a premium feel while holding . worth buying . also if you are confused between iph 11 or iph12 then close your eyes and go for iphone 12 ."}, {'Product': 'iphone12', 'Name': 'Suddha Ram boro', 'Rating': '5', 'CommentHead': 'Awesome', 'Comment': "Thanks flipkart i trust you got my device perfectly loved it best phone in it's segment"}, {'Product': 'iphone12', 'Name': 'Vijaya Kurkute', 'Rating': '5', 'CommentHead': 'Highly recommended', 'Comment': 'Thanx flipkart for value super sale for short time period of 1hour😁, flipkart might need to work on faster deliveryIphone 12 which i got in best price on flipkart1. Camera performance - superb2. Display - superb3. Interface - Amazing'}, {'Product': 'iphone12', 'Name': 'Indradav Sharma ', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': 'I really m glad that i went for i phone in place of all other android devices like the Samsung S series nd one plus . Also , m amazed by the battery life in this i phone . Single charge and its last for a day easily ..Even the gaming experience was great'}, {'Product': 'iphone12', 'Name': 'Indradav Sharma ', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'I really m glad that i went for i phone in place of all other android devices like the Samsung S series nd one plus . Also , m amazed by the battery life in this i phone . Single charge and its last for a day easily ..Even the gaming experience was great'}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:22:16] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:22:16] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:22:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'redme', 'Name': 'Rupam Dhara', 'Rating': '5', 'CommentHead': 'Fabulous!', 'Comment': 'Good phone in this price range, battery backup good, camera ok ok, and performance very very good 🔥 I am mi love And very fast delivery Flipkart, thanks'}, {'Product': 'redme', 'Name': 'Soumadip Mondal', 'Rating': '4', 'CommentHead': 'Wonderful', 'Comment': 'Very nice mobile 🥳😊Performance is very good 😊Camera quality good 😊Good zooming colour boost ✨I love it😘Thank you Flipkart 😇✨'}, {'Product': 'redme', 'Name': 'Kuldeep Singh', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': 'Good phone very nice working and good performance nice look'}, {'Product': 'redme', 'Name': 'Nilesh  Gaidhani', 'Rating': '4', 'CommentHead': 'Good quality product', 'Comment': 'This phone camera is not good but you can use if you are a first phone buyerBattery is awesome after heavy use also not need to charge in a day Display also impresive in this segment HD+ 6.7inch quality was goodSpeaker is loud and clear no any problemPerformance is sometimes not good you can play candy crush game but frame drops are so high, I think I am using right now 90hz panel bcoz i feel poco M4 pro .Now your i first smartphone buyer this phone is great'}, {'Product': 'redme', 'Name': 'Rahul Dhochak', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Mobile is best in this price rangeProcessor Qualcomm Snapdragon 680 is really powerful for multitasking and gamingCamera 📷 Night mode is amazing 🤩Battery life is outstanding fabulous performanceReal 6000 MahOverall excellent performance5 star for Flipkart services'}, {'Product': 'redme', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Best in the market!', 'Comment': 'Better backup osm ans camere clarity is very good 😊 i am happy for this product bec this product is excellent and this budget price is good  very happy 😁'}, {'Product': 'redme', 'Name': 'nitish gaurav', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': "I m a regular customer of Mi ...redmi 10is awesome 👍. It's charging is very fast ...i m giving this review after 2 months ....i m satisfied with this ...plz go for this guys ..really awesome 👍 products...thanks Flipkart"}, {'Product': 'redme', 'Name': 'Deepak kumar Shrivastava', 'Rating': '5', 'CommentHead': 'Brilliant', 'Comment': 'Awesome 😎 Product Redmi has made cool phone this phone camera clicks a photo with HDR which will rock . And performance is the main thing in redmi . Front camera is 🤳 5 mega pixel but comes like 18 mega pixel. Although Redmi 10 is rocking phone.'}, {'Product': 'redme', 'Name': 'Amal Varghese', 'Rating': '4', 'CommentHead': 'Wonderful', 'Comment': 'Faster delivery,The Smartphone is budget and has spec that is Value for money, It is balanced in that area. Performance is good for the price. Battery is also good. But the software or UI experience is mostly trash.'}, {'Product': 'redme', 'Name': 'Sharda  Verma', 'Rating': '4', 'CommentHead': 'Value-for-money', 'Comment': "Deducted 1 star coz of late delivery. Talking about the phone,in such budget, it's amazing, it's providing much more features than other brands. Big screen,sturdy plastic body, back cam is also awesome. Front camera is not very excellent but it's ok ok in this price. It has the big battery so also takes much time to charge. The charger provided in the box is kind of normal not fast charger. Display resolution and quality is good. Overall this phone is good if you are on a budget. Only downs..."}, {'Product': 'redme', 'Name': 'Sharda  Verma', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': "Deducted 1 star coz of late delivery. Talking about the phone,in such budget, it's amazing, it's providing much more features than other brands. Big screen,sturdy plastic body, back cam is also awesome. Front camera is not very excellent but it's ok ok in this price. It has the big battery so also takes much time to charge. The charger provided in the box is kind of normal not fast charger. Display resolution and quality is good. Overall this phone is good if you are on a budget. Only downs..."}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:22:32] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:22:32] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:22:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'redme', 'Name': 'Rupam Dhara', 'Rating': '5', 'CommentHead': 'Fabulous!', 'Comment': 'Good phone in this price range, battery backup good, camera ok ok, and performance very very good 🔥 I am mi love And very fast delivery Flipkart, thanks'}, {'Product': 'redme', 'Name': 'Soumadip Mondal', 'Rating': '4', 'CommentHead': 'Wonderful', 'Comment': 'Very nice mobile 🥳😊Performance is very good 😊Camera quality good 😊Good zooming colour boost ✨I love it😘Thank you Flipkart 😇✨'}, {'Product': 'redme', 'Name': 'Kuldeep Singh', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': 'Good phone very nice working and good performance nice look'}, {'Product': 'redme', 'Name': 'Nilesh  Gaidhani', 'Rating': '4', 'CommentHead': 'Good quality product', 'Comment': 'This phone camera is not good but you can use if you are a first phone buyerBattery is awesome after heavy use also not need to charge in a day Display also impresive in this segment HD+ 6.7inch quality was goodSpeaker is loud and clear no any problemPerformance is sometimes not good you can play candy crush game but frame drops are so high, I think I am using right now 90hz panel bcoz i feel poco M4 pro .Now your i first smartphone buyer this phone is great'}, {'Product': 'redme', 'Name': 'Rahul Dhochak', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': 'Mobile is best in this price rangeProcessor Qualcomm Snapdragon 680 is really powerful for multitasking and gamingCamera 📷 Night mode is amazing 🤩Battery life is outstanding fabulous performanceReal 6000 MahOverall excellent performance5 star for Flipkart services'}, {'Product': 'redme', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Best in the market!', 'Comment': 'Better backup osm ans camere clarity is very good 😊 i am happy for this product bec this product is excellent and this budget price is good  very happy 😁'}, {'Product': 'redme', 'Name': 'nitish gaurav', 'Rating': '5', 'CommentHead': 'Wonderful', 'Comment': "I m a regular customer of Mi ...redmi 10is awesome 👍. It's charging is very fast ...i m giving this review after 2 months ....i m satisfied with this ...plz go for this guys ..really awesome 👍 products...thanks Flipkart"}, {'Product': 'redme', 'Name': 'Deepak kumar Shrivastava', 'Rating': '5', 'CommentHead': 'Brilliant', 'Comment': 'Awesome 😎 Product Redmi has made cool phone this phone camera clicks a photo with HDR which will rock . And performance is the main thing in redmi . Front camera is 🤳 5 mega pixel but comes like 18 mega pixel. Although Redmi 10 is rocking phone.'}, {'Product': 'redme', 'Name': 'Amal Varghese', 'Rating': '4', 'CommentHead': 'Wonderful', 'Comment': 'Faster delivery,The Smartphone is budget and has spec that is Value for money, It is balanced in that area. Performance is good for the price. Battery is also good. But the software or UI experience is mostly trash.'}, {'Product': 'redme', 'Name': 'Sharda  Verma', 'Rating': '4', 'CommentHead': 'Value-for-money', 'Comment': "Deducted 1 star coz of late delivery. Talking about the phone,in such budget, it's amazing, it's providing much more features than other brands. Big screen,sturdy plastic body, back cam is also awesome. Front camera is not very excellent but it's ok ok in this price. It has the big battery so also takes much time to charge. The charger provided in the box is kind of normal not fast charger. Display resolution and quality is good. Overall this phone is good if you are on a budget. Only downs..."}, {'Product': 'redme', 'Name': 'Sharda  Verma', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': "Deducted 1 star coz of late delivery. Talking about the phone,in such budget, it's amazing, it's providing much more features than other brands. Big screen,sturdy plastic body, back cam is also awesome. Front camera is not very excellent but it's ok ok in this price. It has the big battery so also takes much time to charge. The charger provided in the box is kind of normal not fast charger. Display resolution and quality is good. Overall this phone is good if you are on a budget. Only downs..."}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:31:24] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:31:24] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:31:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.13:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'iphone12', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Terrific', 'Comment': 'Wow superb camera phone Very smooth speed and no lag , iphone is the king always Its a beautiful product'}, {'Product': 'iphone12', 'Name': 'Anurag Lad', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'The brand is very trustworthy and i got genuine pice at a very low cost.I ordered the green one and trust me the colour was amazing.All the colours but specifically green and purple are nice for look.Thanks to flipkart❤️'}, {'Product': 'iphone12', 'Name': 'Vishal Gandhi', 'Rating': '5', 'CommentHead': 'Terrific purchase', 'Comment': 'Awesome phone … value for money.. Happy with battery life.. Awesome camera features… look at the images snapped using the phone… easy to use.. Just feared about getting scratch at back glass… but using cover helped it…'}, {'Product': 'iphone12', 'Name': 'Athul Shabu', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': 'Top class performance  and battery backup too. Charges quickly if u are using a 20w charger. Night mode is good , HDR mode works flawlessly. VFM phone.'}, {'Product': 'iphone12', 'Name': 'Flipkart Customer', 'Rating': '5', 'CommentHead': 'Awesome', 'Comment': 'Excellent product worth for every penny, writing this review after using 7 days, earlier was using iPhone 6Plus now on iPhone 12 😍, faster then anything this else.Excellent Picture quality.Just loved it.!!'}, {'Product': 'iphone12', 'Name': 'Ishu Kumar', 'Rating': '5', 'CommentHead': 'Mind-blowing purchase', 'Comment': 'Guys ,this is just Beast at Every Aspect of Configurations, Full Pack with What You want, Like Best Camera , Best Display, Best Battery for whole Day Use, And Everyone know About Processing Speed👌..'}, {'Product': 'iphone12', 'Name': 'Ayaz Ahmad', 'Rating': '5', 'CommentHead': 'Brilliant', 'Comment': "Almost 1month of purshase and i am loving it . Great for photography and videography and trust me the stability of video is awesome . High end performence in Gaming , the only problem is that it heats up a little while playing Bgmi but if u play in a AC room then there's no issue .The boxy look of iphone 12 is very good and it gives a premium feel while holding . worth buying . also if you are confused between iph 11 or iph12 then close your eyes and go for iphone 12 ."}, {'Product': 'iphone12', 'Name': 'Suddha Ram boro', 'Rating': '5', 'CommentHead': 'Awesome', 'Comment': "Thanks flipkart i trust you got my device perfectly loved it best phone in it's segment"}, {'Product': 'iphone12', 'Name': 'Vijaya Kurkute', 'Rating': '5', 'CommentHead': 'Highly recommended', 'Comment': 'Thanx flipkart for value super sale for short time period of 1hour😁, flipkart might need to work on faster deliveryIphone 12 which i got in best price on flipkart1. Camera performance - superb2. Display - superb3. Interface - Amazing'}, {'Product': 'iphone12', 'Name': 'Indradav Sharma ', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': 'I really m glad that i went for i phone in place of all other android devices like the Samsung S series nd one plus . Also , m amazed by the battery life in this i phone . Single charge and its last for a day easily ..Even the gaming experience was great'}, {'Product': 'iphone12', 'Name': 'Indradav Sharma ', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'I really m glad that i went for i phone in place of all other android devices like the Samsung S series nd one plus . Also , m amazed by the battery life in this i phone . Single charge and its last for a day easily ..Even the gaming experience was great'}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:35] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:35] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'iphoneSE', 'Name': 'Ujjal Saikia', 'Rating': '5', 'CommentHead': 'Must buy!', 'Comment': 'Great device. Let me tell the Pros..1. Superb build quality 2. Great display. 3. Camera is great in good lighting conditions 4. Processing is great. 5. Sound is superb. 6. Call quality is great. 7. Red colour looks superb.8. Portrait mode photography is Superb.'}, {'Product': 'iphoneSE', 'Name': 'Sravan Kumar Chokkavarapu', 'Rating': '5', 'CommentHead': 'Great product', 'Comment': 'Who all loves older size i.e., 4.7 inch type should definitely go for this.  Nothing is better than XR, XS or 11. Best for price and usage.'}, {'Product': 'iphoneSE', 'Name': 'Sparsh sethi', 'Rating': '4', 'CommentHead': 'Worth the money', 'Comment': 'Can be surely preferred as your first iphone Value for money Some what battery is not sufficient but as we already know about the batteries of iphone Camera is up to mark but there is insufficiency of night mode wideangle mode but that’s ok its not a big deal Display performance is good enough Overall lookup is impressive and off course attractive Speakers are mind blowing dual speaker setup which is quite loud compared to others At this price range this phone is best if you are intere...'}, {'Product': 'iphoneSE', 'Name': 'Rohit Thakur', 'Rating': '5', 'CommentHead': 'Super!', 'Comment': 'Great camera for pics and videos Battery life is good so far with some setting turn of which i never use and when i use i turn those on and i use it in power saving mode all the time so a full day with light gaming of 1hr or more using camera for 1hr or more listening music in my car on youtube and Bluetooth on for couple of hours it gives me full day of battery varing from 4/5 to 6/7 hours sot per dayPerformance is top notch plays every game and every task with easeVery premium phone look...'}, {'Product': 'iphoneSE', 'Name': 'Malllika dutta', 'Rating': '4', 'CommentHead': 'Value-for-money', 'Comment': 'This is the first iPhone I hv bought .. It’s bit diff for me using this first first as for so many years I hv been using android.. but I am actually liking it .. The camera omg it’s really awesome .. like it feels classy using this .. Battery is also as of now good enough .. I am writing this review after using it for 40 days.. if anyone is thinking of buying this pls go for it .. Thanks.'}, {'Product': 'iphoneSE', 'Name': 'Maksood sk', 'Rating': '5', 'CommentHead': 'Classy product', 'Comment': 'One of Best phone in 2020..Excellent Camera and Performance..battery also good without Games..Thanks u Flipkart Best offer and fastest delivery .'}, {'Product': 'iphoneSE', 'Name': 'Krunal Zaveri', 'Rating': '5', 'CommentHead': 'Simply awesome', 'Comment': 'This iPhone SE is the best phone ever you get. Beautifully designed gives a classy look in your palms. Moreover, performance wise it is a benchmark. You will not be disappointed in this budget. My purchase point was its size. If you are looking for the same you won’t be disappointed. I strongly recommend this phone to people who is more work oriented. Game loves should skip this phone as this is not a game phone. Best features with stunning looks & performance. Battery life is very good...'}, {'Product': 'iphoneSE', 'Name': 'Vishnuvardhan Meda', 'Rating': '4', 'CommentHead': 'Wonderful', 'Comment': 'Mobile is very handy. Packed with good performances and nice camera. This is my first iPhone. Very good experience with Apple. Battery is worst. I am hardly getting 5 hours screen on time.  Positive thing is I came to know how many hours I was spending on my mobile. Because of poor battery now I am only using mobile for 4 hours a day.'}, {'Product': 'iphoneSE', 'Name': 'abdul latheef', 'Rating': '5', 'CommentHead': 'Classy product', 'Comment': 'This is my second iphone after iphone 4s. I’ve been a long time android user in between. I’ll tell you who this phone is for. Prospective buyers can then decide1. For photo and video enthusiasts. Very reliable camera. Fast and excellent picture quality. Videos are absolutely stable and professional quality. You would be amazed how many people shoot Youtube videos on an iPhone. The only downside is that the display doesn’t do justice to the photos and videos you have taken. Night photos are ...'}, {'Product': 'iphoneSE', 'Name': 'NEHA KUMARI', 'Rating': '4', 'CommentHead': 'Love at First Home Touch', 'Comment': 'Totally worth the price if:- you are a iOS fan- like compact phone- want to switch from android to iPhone- you like clicking some good photos (camera is unbeatable)- you multitask (normal phones get stuck between apps, this will keep you going without a hiatus (lag)- you like to listen to music (have 2 speakers, one on the front, and another below; when I watch a movie with 4d-5d music, it feels like Dolby atmos)There a lot a technical advantages too which I dont want to get into (yo...'}, {'Product': 'iphoneSE', 'Name': 'NEHA KUMARI', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'Totally worth the price if:- you are a iOS fan- like compact phone- want to switch from android to iPhone- you like clicking some good photos (camera is unbeatable)- you multitask (normal phones get stuck between apps, this will keep you going without a hiatus (lag)- you like to listen to music (have 2 speakers, one on the front, and another below; when I watch a movie with 4d-5d music, it feels like Dolby atmos)There a lot a technical advantages too which I dont want to get into (yo...'}]
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:46] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:46] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.2 - - [14/Mar/2023 15:33:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
